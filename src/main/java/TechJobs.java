@@ -123,6 +123,7 @@ public class TechJobs {
             for (HashMap<String, String> job : someJobs) {
                 System.out.println("\n*****");
                 // Map.Entry the for loop treats it like (0,(n)) instead of (0,1)
+                // .entrySet returns a set view of the hash map
                 for (Map.Entry<String, String> item : job.entrySet()) {
                     // Iterates through all the hashmap
                     System.out.println(item.getKey() + ": " + item.getValue());
